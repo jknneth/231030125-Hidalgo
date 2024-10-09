@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #7ea6ae;
+}
+
+h1{
+    text-align: center;
+    color: bisque;
+}
+h2{
+    color: bisque;
+    margin-top: 20px;
+}
+
+ul{
+    list-style-type: disc;
+    padding: 0;
+}
+li{
+    background: #cee3e8;
+    border: 1px solid #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
