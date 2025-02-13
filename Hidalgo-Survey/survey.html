@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form action="#" method="post">
+            <!-- Personal Information Section -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+
+            <!-- Feedback Section -->
+            <label for="experience">How would you rate your experience with our service?</label>
+            <input type="radio" id="excellent" name="experience" value="excellent">
+            <label for="excellent">Excellent</label>
+            <input type="radio" id="good" name="experience" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="average" name="experience" value="average">
+            <label for="average">Average</label>
+            <input type="radio" id="poor" name="experience" value="poor">
+            <label for="poor">Poor</label>
+
+            <label for="suggestions">Any suggestions for improvement?</label>
+            <textarea id="suggestions" name="suggestions" rows="4" placeholder="Your suggestions..."></textarea>
+
+            <!-- Preferences Section -->
+            <label for="newsletter">Would you like to receive our newsletter?</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Yes, sign me up!</label>
+
+            <label for="contact">Preferred method of contact:</label>
+            <select id="contact" name="contact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="none">No preference</option>
+            </select>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+ 

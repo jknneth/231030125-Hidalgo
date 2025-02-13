@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #b9a67b;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e1c771;
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.product-info {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.product-info h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.product-info .price {
+    font-size: 1.8rem;
+    color: #e1c77c;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.product-info .description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.buy-button {
+    background-color: #e1c77c;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.buy-button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.product-image-gallery {
+    position: relative;
+    width: 50%;
+}
+
+.product-image-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.size-label {
+    font-size: 1.2rem;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.size-dropdown {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.size-dropdown:hover {
+    background-color: #e9ecef;
+}
+
+.size-dropdown:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.testimonials {
+    padding: 80px 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.testimonial p:last-child {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #9c9062;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .product-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .product-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .product-info h2 {
+        font-size: 2rem;
+    }
+
+    .buy-button {
+        padding: 10px 25px;
+        font-size: 1.1rem;
+    }
+
+    .product-image-gallery img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+}
+    

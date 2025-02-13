@@ -1,0 +1,86 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color:   #fbfbfb;
+    margin: 0;
+    padding: 0;
+    color: #4b3f36;
+    background-image: url(calm.avif);
+}
+
+.container {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fff8e76d;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #d3c4a6;
+}
+
+.bio, .achievements, .quote {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #f7efe1;
+    border-radius: 8px;
+    border-left: 6px solid #d3a77b;
+    transition: background-color 0.3s ease;
+}
+
+.bio:hover, .achievements:hover, .quote:hover {
+    background-color: #f3e6d177;
+}
+
+.bio h2, .achievements h2, .quote h2 {
+    color: #8b5e34;
+    margin-top: 0;
+    font-size: 1.7em;
+    border-bottom: 1px solid #d3c4a660;
+    padding-bottom: 5px;
+}
+
+.achievements ul {
+    list-style-type: square;
+    padding-left: 25px;
+    color: #5b4733;
+    font-size: 1em;
+}
+
+.achievements ul li {
+    margin-bottom: 8px;
+}
+
+
+.quote p {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #6b513dd6;
+    margin: 0;
+    position: relative;
+}
+
+.quote p::before {
+    content: '“';
+    font-size: 2em;
+    color: #d3a77b;
+    position: absolute;
+    left: -15px;
+    top: -10px;
+}
+
+.quote p::after {
+    content: '”';
+    font-size: 2em;
+    color: #d3a77b7d;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+.container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
