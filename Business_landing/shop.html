@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Richboyz Clothing</title>
+    <title>Richboyz Clothing - Shop Trendy</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .slider-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider {
+            display: flex;
+            width: 200%;
+            animation: slide 5s infinite alternate ease-in-out;
+        }
+        .slide {
+            width: 50%;
+            flex-shrink: 0;
+        }
+        .slide img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: auto;
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Richboyz </h1>
+            <h1>Richboyz Clothing</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -21,21 +52,30 @@
         </div>
     </header>
 
+    <!-- Image Slider -->
+    <section class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="hoodie.png" alt="Richboyz Hoodie"></div>
+            <div class="slide"><img src="shirt.png" alt="Richboyz Shirt"></div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
     <section class="shop-section">
         <div class="container">
             <h2>Shop Our Collection</h2>
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="images/hoodie1.jpg" alt="Richboyz Hoodie">
+                    <img src="hoodie.png" alt="Richboyz Hoodie">
                     <h3>Classic Richboyz Hoodie</h3>
                     <p>$69.99</p>
-                    <a href="#" class="cta-button">Buy Now</a>
+                    <a href="https://richboyz.com/" target="_blank" class="cta-button">Buy Now</a>
                 </div>
                 <div class="product-item">
-                    <img src="images/tshirt1.jpg" alt="Richboyz T-Shirt">
+                    <img src="shirt.png" alt="Richboyz Shirt">
                     <h3>Signature T-Shirt</h3>
                     <p>$29.99</p>
-                    <a href="#" class="cta-button">Buy Now</a>
+                    <a href="https://richboyz.com/" target="_blank" class="cta-button">Buy Now</a>
                 </div>
             </div>
         </div>

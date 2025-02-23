@@ -4,10 +4,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #222831;
-    color: #EEEEEE;
+    background-color: #EEEEEE;
+    color: #222831;
 }
-
 
 .hero-section {
     position: relative;
@@ -50,8 +49,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #EEEEEE;
-    background: rgba(49, 54, 63, 0.8);
+    color: #222831;
+    background: rgba(238, 238, 238, 0.8);
     padding: 20px;
     border-radius: 8px;
 }
@@ -67,8 +66,8 @@ body {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #76ABAE;
-    color: #222831;
+    background: #222831;
+    color: #76ABAE;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -79,7 +78,6 @@ body {
     background: #5C9195;
 }
 
-
 .container {
     width: 80%;
     margin: auto;
@@ -87,8 +85,8 @@ body {
 
 /* Header */
 header {
-    background: #31363F;
-    color: #EEEEEE;
+    background: #EEEEEE;
+    color: #222831;
     padding: 20px 0;
     text-align: center;
 }
@@ -105,7 +103,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #EEEEEE;
+    color: #222831;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -123,7 +121,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #EEEEEE;
+    color: #222831;
 }
 
 .hero-section h2 {
@@ -134,8 +132,8 @@ nav ul li a:hover {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background: #76ABAE;
-    color: #222831;
+    background: #222831;
+    color: #76ABAE;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -150,7 +148,7 @@ nav ul li a:hover {
 .about-section {
     padding: 50px 0;
     text-align: center;
-    background: #31363F;
+    background: #EEEEEE;
 }
 
 .about-section h2 {
@@ -170,12 +168,13 @@ nav ul li a:hover {
 }
 
 .product-item {
-    background: #31363F;
+    background: #EEEEEE;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     text-align: center;
+    position: relative;
 }
 
 .product-item img {
@@ -191,10 +190,21 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+/* Animation for shirt and hoodie */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.shirt, .hoodie {
+    animation: float 3s ease-in-out infinite;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 50px 0;
-    background: #31363F;
+    background: #EEEEEE;
     text-align: center;
 }
 
@@ -210,14 +220,14 @@ input, textarea {
     margin: 10px 0;
     border: 1px solid #76ABAE;
     border-radius: 5px;
-    background: #222831;
-    color: #EEEEEE;
+    background: #EEEEEE;
+    color: #222831;
 }
 
 button {
     padding: 10px 20px;
-    background: #76ABAE;
-    color: #222831;
+    background: #222831;
+    color: #76ABAE;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -231,10 +241,9 @@ button:hover {
 
 /* Footer */
 footer {
-    background: #31363F;
-    color: #EEEEEE;
+    background: #EEEEEE;
+    color: #222831;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
 }
-

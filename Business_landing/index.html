@@ -6,9 +6,37 @@
     <title>Richboyz Clothing - Elevate Your Style</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .slider-container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider {
+            display: flex;
+            width: 200%;
+            animation: slide 5s infinite alternate ease-in-out;
+        }
+        .slide {
+            width: 50%;
+            flex-shrink: 0;
+        }
+        .slide img {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: auto;
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
 </head>
 <body>
-
     <header>
         <div class="container">
             <h1>Richboyz Clothing</h1>
@@ -26,33 +54,8 @@
     <!-- Image Slider -->
     <section class="slider-container">
         <div class="slider">
-            <div class="slide"><img src="images/hoodie.png" alt="Richboyz Hoodie"></div>
-            <div class="slide"><img src="images/shirt.png" alt="Richboyz Shirt"></div>
-        </div>
-    </section>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h2>Elevate Your Style with Richboyz</h2>
-            <p>Premium streetwear for the modern trendsetter.</p>
-            <a href="shop.html" class="cta-button">Shop Now</a>
-        </div>
-    </section>
-
-    <!-- Featured Products -->
-    <section class="featured-products">
-        <h2>Latest Collection</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="hoodie.png" alt="Hoodie">
-                <p>Signature Hoodie</p>
-            </div>
-            <div class="product">
-                <img src="shirt.png" alt="Shirt">
-                <p>Premium Tee</p>
-            </div>
+            <div class="slide"><img src="hoodie.png" alt="Richboyz Hoodie"></div>
+            <div class="slide"><img src="shirt.png" alt="Richboyz Shirt"></div>
         </div>
     </section>
 
@@ -61,6 +64,5 @@
             <p>&copy; 2024 Richboyz Clothing. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
